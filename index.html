@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webdenso</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <a href="index.html" class="logo"> WEBDENSO.</a>
+        <button class="menu-btn" onclick="showMenu()">
+          <img
+            src="assets/icons/menu.svg"
+            alt="menu icon"
+            height="40"
+            width="40"
+            decoding="async"
+            loading="eager"
+          />
+        </button>
+      </nav>
+    </header>
+    <div class="sidebar">
+      <div class="menu-container">
+        <p>SOCIALS</p>
+        <a href="#">INSTGRAM</a>
+        <a href="#">LINKEDIN</a>
+        <a href="#">FACEBOOK</a>
+      </div>
+      <div class="menu-container">
+        <p>MENU</p>
+        <div>
+          <a href="#" class="menu-links">ABOUT</a>
+          <a href="#" class="menu-links">PACKAGES</a>
+          <a href="#" class="menu-links">CONTACT</a>
+        </div>
+      </div>
+      <button class="close-btn" onclick="reverseMenu()">
+        <img
+          src="assets/icons/close.svg"
+          alt="close icon"
+          height="50"
+          width="50"
+          decoding="async"
+          loading="eager"
+        />
+      </button>
+    </div>
+    <main>
+      <section class="hero-container">
+        <h1 class="hero-heading">
+          Webdenso - Crafting Innovative Web Solutions.
+          <span>
+            Build, optimize, and secure your digital presence with us.
+          </span>
+        </h1>
+        <div class="hero-btn-holder">
+          <a href="#" class="projects-btn">Projects</a>
+          <a href="#" class="contact-btn">Contact Us</a>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="assets/js/script.js"></script>
+  </body>
+</html>
