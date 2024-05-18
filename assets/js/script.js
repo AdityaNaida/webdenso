@@ -67,36 +67,6 @@ function heroAnimation() {
     },
     "nav"
   );
-
-  tl.from(".hero-heading", {
-    y: 100,
-    opacity: 0,
-    duration: 0.5,
-  });
-  tl.from(".hero-btn-holder > a", {
-    y: -50,
-    opacity: 0,
-    duration: 0.5,
-    stagger: 0.3,
-  });
-  tl.from(
-    ".hero-h1",
-    {
-      filter: "blur(2rem)",
-      opacity: 0,
-      duration: 0.5,
-    },
-    "h1effect"
-  );
-  tl.from(
-    ".hero-h1 > a",
-    {
-      backgroundColor: "#fff",
-      boxShadow: "rgba(255, 255, 255, 0.8) 0 0 9rem 2.3rem",
-      duration: 0.5,
-    },
-    "h1effect"
-  );
 }
 
 heroAnimation();
