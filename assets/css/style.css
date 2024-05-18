@@ -24,15 +24,15 @@ body {
   --light-black: #101010;
   --black: #000000;
   --dark-grey: #242426;
-  --grey: #86868b;
-  --white: #f5f5f7;
+  --grey: #a1a1a1;
+  --white: #ededed;
   --font-gret: #7a7a7e;
   --blue: #0077ed;
   --green: #19ad6f;
   --round: 10rem;
+  --radius: 1rem;
   --regular: "Telegraph-regular", sans-serif;
-  --light: "Telegraph-light", sans-serif;
-  --bold: "Telegraph-bold", sans-serif;
+  --code: "Code", sans-serif;
 }
 
 a {
@@ -45,17 +45,12 @@ img {
 
 @font-face {
   font-family: "Telegraph-regular";
-  src: url("../fonts/PPTelegraf-Regular.otf");
+  src: url("../fonts/e11418ac562b8ac1.p.woff2");
 }
 
 @font-face {
-  font-family: "Telegraph-light";
-  src: url("../fonts/PPTelegraf-UltraLight.otf");
-}
-
-@font-face {
-  font-family: "Telegraph-bold";
-  src: url("../fonts/PPTelegraf-UltraBold.otf");
+  font-family: "Code";
+  src: url("../fonts/66f30814ff6d7cdf.p.woff2");
 }
 
 /* Navbar */
@@ -80,7 +75,7 @@ img {
 
 .menu-btn {
   background-color: transparent;
-  border: 0.1rem solid var(--white);
+  border: none;
   border-radius: 50%;
   padding: 0.5rem;
 }
@@ -142,7 +137,7 @@ img {
   top: 5%;
   right: 5%;
   background-color: transparent;
-  border: 0.1rem solid var(--light-black);
+  border: none;
   border-radius: 50%;
 }
 
@@ -166,15 +161,43 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 2rem;
-  height: 80vh;
+  height: 90vh;
   width: 100%;
   background: url("../images/grid-lines.svg") no-repeat center;
-  padding: 2rem;
+  background-size: cover;
+}
+
+.hero-h1 {
+  color: var(--white);
+  font: 500 2rem var(--regular);
+  text-transform: capitalize;
+  margin-bottom: 4rem;
+  text-align: center;
+  line-height: 4rem;
+}
+
+.hero-h1 > span {
+  color: var(--grey);
+}
+
+.get-btn {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--light-black);
+  padding: 0rem 1.2rem;
+  border-radius: var(--round);
+  margin-left: 1rem;
+}
+
+.get-btn > img {
+  height: 2rem;
+  width: 2rem;
+  vertical-align: middle;
 }
 
 .hero-heading {
   color: var(--white);
-  font: 500 5rem var(--regular);
+  font: 600 5rem var(--regular);
   text-align: center;
 }
 
@@ -203,16 +226,295 @@ main {
   color: var(--light-black);
   background-color: var(--white);
 }
+.projects-btn:hover {
+  background-color: #ffffffd0;
+}
 
 .contact-btn {
   border: 0.2rem solid var(--white);
   color: var(--white);
   background-color: transparent;
 }
+
+.contact-btn:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+/* What we do container */
+.work-container {
+  height: auto;
+  width: 100%;
+  border: 0.1rem solid var(--dark-grey);
+  border-bottom: none;
+  margin-bottom: 2rem;
+}
+
+.work-heading {
+  padding: 3rem 1rem;
+  border-bottom: 0.1rem solid var(--dark-grey);
+  margin-bottom: 2rem;
+}
+
+.work-heading {
+  text-align: center;
+  color: var(--white);
+}
+
+.work-heading > h2 {
+  font: 500 4rem var(--regular);
+}
+
+.work-icon {
+  height: 4rem;
+  width: 4rem;
+  vertical-align: middle;
+}
+
+.work-heading > h2:nth-child(2) {
+  margin-top: 1rem;
+  color: var(--grey);
+}
+
+.work-boxes {
+  border-top: 0.1rem solid var(--dark-grey);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.work-box {
+  height: auto;
+  padding: 2rem;
+  border-right: 0.1rem solid var(--dark-grey);
+  border-bottom: 0.1rem solid var(--dark-grey);
+  transition: all ease 0.5s;
+}
+
+.work-box:hover {
+  background-color: var(--light-black);
+}
+
+.work-boxes > div:nth-child(3),
+.work-boxes > div:nth-child(6) {
+  border-right: none;
+}
+
+.work-para {
+  font: 400 1.6rem var(--regular);
+  color: var(--font-gret);
+}
+
+.work-para > img {
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.2rem;
+  vertical-align: middle;
+}
+
+.work-h3 {
+  color: var(--white);
+  margin-top: 2rem;
+  font: 600 2.5rem var(--regular);
+  text-transform: capitalize;
+}
+.work-h3 > span {
+  color: var(--grey);
+}
+
+.webdevelopment-icon-container {
+  height: 22rem;
+  width: 80%;
+  padding: 1rem;
+  margin-top: 5rem;
+  border: 0.1rem solid var(--dark-grey);
+  border-radius: var(--radius);
+}
+
+.radio-holder {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.radio-icon {
+  display: inline-block;
+  height: 0.8rem;
+  width: 0.8rem;
+  border-radius: 50%;
+  background-color: #ffffff24;
+}
+.code-holder {
+  padding: 1rem 0rem;
+}
+.code-text {
+  color: #edededc4;
+  font: 400 1.2rem var(--code);
+  line-height: 1.9rem;
+}
+
+.website-txt {
+  margin: auto;
+  font: 400 1.2rem var(--code);
+  color: var(--grey);
+}
+.website-txt > svg {
+  vertical-align: middle;
+}
+.webpage-view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  height: 17rem;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 2rem;
+
+  border: 0.1rem solid var(--dark-grey);
+  border-radius: 1rem;
+}
+
+.webpage-view > p {
+  color: var(--white);
+  font: 600 1.2rem var(--regular);
+  margin-bottom: 1rem;
+}
+.webpage-view > p > span {
+  color: var(--grey);
+}
+
+.projects-btn-micro,
+.contact-btn-micro {
+  color: var(--black);
+  background-color: var(--white);
+  font: 500 1.2rem var(--regular);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius);
+  margin-right: 2rem;
+}
+.contact-btn-micro {
+  background-color: transparent;
+  color: var(--white);
+  border: 0.1rem solid var(--white);
+}
+
+.crm-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.crm-heading > p {
+  color: #edededc4;
+  font: 400 1.4rem var(--regular);
+}
+.crm-username {
+  font: 400 1.2rem var(--regular);
+  color: var(--grey);
+  margin-right: 0.2rem;
+}
+
+.crm-username + img {
+  height: 1.6rem;
+  width: 1.6rem;
+  /* vertical-align: middle; */
+}
+
+.crm-boxes-mini {
+  height: 100%;
+  border-radius: var(--radius);
+  background-color: #0a0a0a;
+  border: 0.1rem solid var(--dark-grey);
+}
+
+.about-text {
+  height: 100vh;
+  width: 100%;
+}
+
+.app-development-view {
+  height: auto;
+  width: 42%;
+  margin-top: 2rem;
+  padding: 1rem 0rem;
+
+  background-color: #0a0a0a;
+  border: 0.1rem solid var(--dark-grey);
+  border-radius: 2rem;
+  margin: auto;
+}
+
+.iphone-camera {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 50%;
+
+  padding: 0rem 1rem 0rem 0.3rem;
+  margin: auto;
+  background-color: var(--black);
+  border-radius: var(--round);
+}
+
+.iphone-display {
+  height: 25rem;
+  padding: 2rem 1rem;
+}
+
+.iphone-display > p {
+  color: var(--white);
+  font: 300 1.2rem var(--regular);
+}
+
+.iphone-display > h4 {
+  margin-top: 1rem;
+  color: var(--white);
+  font: 400 4rem var(--regular);
+  text-align: center;
+}
+
+.ecommerce-boxes {
+  border: 0.1rem solid var(--dark-grey);
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.cms-links {
+  width: 40%;
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cms-links > div {
+  padding: 1.5rem;
+  background-color: #0a0a0a;
+  border-radius: var(--radius);
+  border: 0.1rem solid var(--dark-grey);
+}
+
+.cms-page {
+  height: auto;
+  width: 60%;
+  background-color: #0a0a0a;
+  border-radius: var(--radius);
+  border: 0.1rem solid var(--dark-grey);
+}
+/* .cms-links */
 @media only screen and (max-width: 1300px) {
   .sidebar {
     width: 55%;
     right: -55%;
+  }
+  #navbar,
+  main {
+    max-width: 114rem;
+  }
+  .webdevelopment-icon-container {
+    width: 100%;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -223,6 +525,18 @@ main {
     width: 70%;
     right: -70%;
   }
+  #navbar,
+  main {
+    max-width: 96rem;
+    padding: 1rem 2rem;
+  }
+  .work-boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .work-boxes > div:nth-child(3),
+  .work-boxes > div:nth-child(6) {
+    border-right: 0.1rem solid var(--dark-grey);
+  }
 }
 @media only screen and (max-width: 768px) {
   html {
@@ -232,8 +546,29 @@ main {
     width: 90%;
     right: -90%;
   }
+  #navbar,
+  main {
+    max-width: 72rem;
+  }
+  .work-boxes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .webdevelopment-icon-container {
+    height: auto;
+  }
+  .work-boxes > div {
+    border-right: none !important;
+    border-left: none;
+  }
+  .iphone-display {
+    height: 32rem;
+  }
 }
 @media only screen and (max-width: 576px) {
+  #navbar,
+  main {
+    max-width: 54rem;
+  }
   .sidebar {
     /* padding: 10rem 4rem; */
     width: 100%;

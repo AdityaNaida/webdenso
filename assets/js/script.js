@@ -1,7 +1,7 @@
 const tl = gsap.timeline();
 tl.to(".sidebar", {
   right: 0,
-  duration: 0.5,
+  duration: 0.3,
 });
 
 tl.from(".menu-container > p", {
@@ -79,6 +79,24 @@ function heroAnimation() {
     duration: 0.5,
     stagger: 0.3,
   });
+  tl.from(
+    ".hero-h1",
+    {
+      filter: "blur(2rem)",
+      opacity: 0,
+      duration: 0.5,
+    },
+    "h1effect"
+  );
+  tl.from(
+    ".hero-h1 > a",
+    {
+      backgroundColor: "#fff",
+      boxShadow: "rgba(255, 255, 255, 0.8) 0 0 9rem 2.3rem",
+      duration: 0.5,
+    },
+    "h1effect"
+  );
 }
 
 heroAnimation();
