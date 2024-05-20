@@ -195,12 +195,46 @@ function leaveBoxes() {
   animatedText();
 }
 
-let current = "";
-// const textContentLength = Math.floor(text.length / 2);
-// text.split("").forEach((e, i) => {
-//   if (textContentLength > i) {
-//     current += `<span class="lt" style="color: ${color}">${e}</span>`;
-//   } else {
-//     current += `<span class="rt" style="color: ${color}">${e}</span>`;
-//   }
-// });
+function homeTextEffect() {
+  let current = "";
+  const allText = document.querySelector("#home-textEffect > h2");
+  const allTextLength = Math.ceil(allText.textContent.split("").length / 2);
+  allText.textContent.split("").forEach((e, i) => {
+    if (allTextLength > i) {
+      current += `<span class="lt">${e}</span>`;
+    } else {
+      current += `<span class="rt">${e}</span>`;
+    }
+  });
+  allText.innerHTML = current;
+}
+
+homeTextEffect();
+const smallScreen = window.matchMedia("(max-width: 768px)");
+gsap.from(".lt", {
+  y: 150,
+  duration: 0.3,
+  stagger: 0.2,
+  scrollTrigger: {
+    trigger: "#home-textEffect",
+    scroller: "body",
+    start: smallScreen.matches ? "top 60%" : "top 30%",
+    end: "top 100%",
+    scrub: 2,
+    pin: true,
+  },
+});
+
+gsap.from(".rt", {
+  y: 150,
+  duration: 0.3,
+  stagger: -0.2,
+  scrollTrigger: {
+    trigger: "#home-textEffect",
+    scroller: "body",
+    start: smallScreen.matches ? "top 60%" : "top 30%",
+    end: "top 100%",
+    scrub: 2,
+    pin: true,
+  },
+});

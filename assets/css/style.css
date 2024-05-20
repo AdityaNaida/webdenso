@@ -398,7 +398,9 @@ main {
   width: 70% !important;
 }
 
-.textEffect {
+.textEffect,
+.lt,
+.rt {
   display: inline-block;
 }
 
@@ -406,9 +408,33 @@ main {
   overflow: hidden;
 }
 
-.lt,
-.rt {
+/* Home Text Effect */
+
+#home-textEffect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 100%;
+  /* padding: 4rem 0rem; */
+}
+
+#home-textEffect > h2 {
+  place-self: center;
+  color: var(--light-black);
+  font: 300 9vw var(--regular);
+  letter-spacing: -2.04px;
+  line-height: 1;
+  overflow-y: hidden;
+}
+
+#home-textEffect > h2 span {
   display: inline-block;
+}
+
+.testimonies {
+  height: 100vh;
+  width: 100%;
 }
 @media only screen and (max-width: 1300px) {
   .sidebar {
@@ -475,9 +501,9 @@ main {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  /* .techstack-list > div {
-    min-width: 30%;
-  } */
+  #home-textEffect {
+    height: 20vh;
+  }
 }
 @media only screen and (max-width: 576px) {
   #navbar,
