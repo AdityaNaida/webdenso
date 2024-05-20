@@ -93,108 +93,85 @@ function heroAnimation() {
 heroAnimation();
 
 function servicesAnimation() {
-  // const tl = gsap.timeline();
+  const smallScreen = window.matchMedia("(max-width: 768px)");
 
-  gsap.from(
-    ".webdev-textbox",
-    {
-      x: -200,
-      opacity: 0,
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: ".webdev-textbox",
-        scroller: "body",
-        start: "top 80%",
-        end: "top 70%",
-        scrub: 2,
-      },
+  gsap.from(".webdev-textbox", {
+    x: smallScreen.matches ? -100 : -200,
+    opacity: 0,
+    duration: smallScreen.matches ? 0.7 : 0.5,
+    scrollTrigger: {
+      trigger: ".webdev-textbox",
+      scroller: "body",
+      start: smallScreen.matches ? "top 90%" : "top 80%",
+      end: smallScreen.matches ? "top 80%" : "top 70%",
+      scrub: 1,
     },
-    "webdevelopment"
-  );
+  });
 
-  gsap.from(
-    ".webdevelopment-illustration",
-    {
-      x: 200,
-      opacity: 0,
-      duration: 0.3,
-      scrollTrigger: {
-        trigger: ".webdev-image",
-        scroller: "body",
-        start: "top 80%",
-        end: "top 70%",
-        scrub: 2,
-      },
+  gsap.from(".webdevelopment-illustration", {
+    x: smallScreen.matches ? 100 : 200,
+    opacity: 0,
+    duration: smallScreen.matches ? 0.7 : 0.3,
+    scrollTrigger: {
+      trigger: ".webdev-image",
+      scroller: "body",
+      start: smallScreen.matches ? "top 90%" : "top 80%",
+      end: smallScreen.matches ? "top 80%" : "top 70%",
+      scrub: 1,
     },
-    "webdevelopment"
-  );
+  });
 
-  gsap.from(
-    ".seo-textbox",
-    {
-      x: 200,
-      opacity: 0,
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: ".seo-textbox",
-        scroller: "body",
-        start: "top 80%",
-        end: "top 70%",
-        scrub: 2,
-      },
+  gsap.from(".seo-textbox", {
+    x: smallScreen.matches ? 100 : 200,
+    opacity: 0,
+    duration: smallScreen.matches ? 0.7 : 0.5,
+    scrollTrigger: {
+      trigger: ".seo-textbox",
+      scroller: "body",
+      start: smallScreen.matches ? "top 90%" : "top 80%",
+      end: smallScreen.matches ? "top 80%" : "top 70%",
+      scrub: 1,
     },
-    "seo"
-  );
+  });
 
-  gsap.from(
-    ".seo-illustration",
-    {
-      x: -200,
-      opacity: 0,
-      duration: 0.3,
-      scrollTrigger: {
-        trigger: ".seo-image",
-        scroller: "body",
-        start: "top 80%",
-        end: "top 70%",
-        scrub: 2,
-      },
+  gsap.from(".seo-illustration", {
+    x: smallScreen.matches ? -100 : -200,
+    opacity: 0,
+    duration: smallScreen.matches ? 0.7 : 0.3,
+    scrollTrigger: {
+      trigger: ".seo-image",
+      scroller: "body",
+      start: smallScreen.matches ? "top 90%" : "top 80%",
+      end: smallScreen.matches ? "top 80%" : "top 70%",
+      scrub: 1,
     },
-    "seo"
-  );
-  gsap.from(
-    ".appdev-textbox",
-    {
-      x: -200,
-      opacity: 0,
-      duration: 0.5,
-      scrollTrigger: {
-        trigger: ".appdev-textbox",
-        scroller: "body",
-        start: "top 80%",
-        end: "top 70%",
-        scrub: 2,
-      },
-    },
-    "appdevelopment"
-  );
+  });
 
-  gsap.from(
-    ".appdev-illustration",
-    {
-      x: 200,
-      opacity: 0,
-      duration: 0.3,
-      scrollTrigger: {
-        trigger: ".appdev-image",
-        scroller: "body",
-        start: "top 80%",
-        end: "top 70%",
-        scrub: 2,
-      },
+  gsap.from(".appdev-textbox", {
+    x: smallScreen.matches ? -100 : -200,
+    opacity: 0,
+    duration: smallScreen.matches ? 0.7 : 0.5,
+    scrollTrigger: {
+      trigger: ".appdev-textbox",
+      scroller: "body",
+      start: smallScreen.matches ? "top 90%" : "top 80%",
+      end: smallScreen.matches ? "top 80%" : "top 70%",
+      scrub: 1,
     },
-    "appdevelopment"
-  );
+  });
+
+  gsap.from(".appdev-illustration", {
+    x: smallScreen.matches ? 100 : 200,
+    opacity: 0,
+    duration: smallScreen.matches ? 0.7 : 0.3,
+    scrollTrigger: {
+      trigger: ".appdev-image",
+      scroller: "body",
+      start: smallScreen.matches ? "top 90%" : "top 80%",
+      end: smallScreen.matches ? "top 80%" : "top 70%",
+      scrub: 1,
+    },
+  });
 }
 
 servicesAnimation();
