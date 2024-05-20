@@ -163,7 +163,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   align-items: center;
 }
@@ -175,6 +175,7 @@ main {
 .hero-text > h1 {
   font: 600 5rem var(--regular);
   margin-bottom: 1rem;
+  overflow-y: hidden;
 }
 
 .hero-text > h1 > span {
@@ -185,31 +186,7 @@ main {
   color: var(--dark-grey);
   font: 400 2rem var(--regular);
   margin-bottom: 3rem;
-}
-
-.hero-btn-holder {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  gap: 3rem;
-}
-
-.portfolio-btn,
-.contactus-btn {
-  font: 500 2rem var(--regular);
-  padding: 1.2rem 3rem;
-  border-radius: var(--round);
-}
-
-.portfolio-btn {
-  color: var(--dark-grey);
-  background-color: var(--green);
-}
-
-.contactus-btn {
-  color: var(--white);
-  background-color: var(--dark-grey);
+  overflow-y: hidden;
 }
 
 .heroimg_holder > img {
@@ -221,6 +198,7 @@ main {
 .hero_form {
   display: flex;
   flex-direction: column;
+  width: 60%;
   gap: 2rem;
 }
 
@@ -249,7 +227,70 @@ main {
   outline: none;
 }
 
-/* .cms-links */
+/* services-container */
+.services-container {
+  height: auto;
+  width: 100%;
+  padding: 4rem 0rem 2rem;
+}
+
+.services-heading {
+  font: 600 3.5rem var(--regular);
+  margin-bottom: 1rem;
+}
+
+.services-para {
+  color: var(--dark-grey);
+  font: 400 1.5rem var(--regular);
+}
+
+.services-list,
+.services-list-reverse {
+  padding: 5rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 5rem;
+}
+
+.services-list-reverse {
+  direction: rtl;
+}
+.services-image-holder {
+  overflow-x: hidden;
+}
+.services-image-holder > img {
+  height: auto;
+  width: 70%;
+  display: block;
+}
+
+.services-list-reverse > .services-image-holder > img {
+  margin: auto;
+}
+
+.services-textbox {
+  text-align: -webkit-left;
+}
+.services-textbox > p,
+.services-textbox > h3 {
+  margin-bottom: 1rem;
+}
+.services-textbox > p {
+  color: var(--green);
+  font: 500 1.6rem var(--regular);
+}
+
+.services-textbox > h3 {
+  color: var(--black);
+  font: 600 3rem var(--regular);
+}
+
+.services-textbox > article {
+  color: var(--light-black);
+  font: 400 1.5rem var(--regular);
+  width: 60%;
+}
 @media only screen and (max-width: 1300px) {
   .sidebar {
     width: 55%;
@@ -288,8 +329,28 @@ main {
   }
 
   .hero-container {
+    height: auto;
+  }
+  .hero-container,
+  .services-list,
+  .services-list-reverse {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
+  }
+  .hero_form {
+    width: 80%;
+    margin: auto;
+  }
+  .services-textbox > article {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  .services-image-holder > img {
+    margin: auto;
+  }
+  .services-list,
+  .services-list-reverse {
+    padding: 5rem 0rem 0rem;
   }
 }
 @media only screen and (max-width: 576px) {
