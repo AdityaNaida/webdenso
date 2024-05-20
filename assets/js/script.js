@@ -173,5 +173,34 @@ function servicesAnimation() {
     },
   });
 }
-
 servicesAnimation();
+
+function animatedText() {
+  gsap.from(".textEffect", {
+    y: -20,
+    opacity: 0,
+    duration: 0.5,
+    ease: "bounce.out",
+  });
+}
+
+const frameworkName = document.querySelector(".framework-name");
+function enterEnter(text, color) {
+  frameworkName.innerHTML = `<span style='color: ${color};' class="textEffect">${text}</span>`;
+  animatedText();
+}
+
+function leaveBoxes() {
+  frameworkName.innerHTML = `<span class="textEffect">framework,</span>`;
+  animatedText();
+}
+
+let current = "";
+// const textContentLength = Math.floor(text.length / 2);
+// text.split("").forEach((e, i) => {
+//   if (textContentLength > i) {
+//     current += `<span class="lt" style="color: ${color}">${e}</span>`;
+//   } else {
+//     current += `<span class="rt" style="color: ${color}">${e}</span>`;
+//   }
+// });

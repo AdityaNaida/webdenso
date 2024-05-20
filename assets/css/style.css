@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  background-color: var(--white);
+  background-color: #fff;
   overflow-x: hidden;
 }
 
@@ -72,6 +72,8 @@ img {
 .logo {
   color: var(--light-black);
   font: 600 4rem var(--regular);
+  letter-spacing: -2.04px;
+  line-height: 1;
 }
 
 .logo > span {
@@ -174,9 +176,11 @@ main {
   gap: 2rem;
 }
 .hero-text > h1 {
-  font: 600 5rem var(--regular);
+  font: 500 5rem var(--regular);
   margin-bottom: 1rem;
   overflow-y: hidden;
+  letter-spacing: -2.04px;
+  line-height: 1;
 }
 
 .hero-text > h1 > span {
@@ -239,6 +243,8 @@ main {
 .services-heading {
   font: 600 3.5rem var(--regular);
   margin-bottom: 1rem;
+  letter-spacing: -2.04px;
+  line-height: 1;
 }
 
 .services-para {
@@ -286,12 +292,123 @@ main {
 .services-textbox > h3 {
   color: var(--black);
   font: 600 3rem var(--regular);
+  letter-spacing: -2.04px;
+  line-height: 1;
 }
 
 .services-textbox > article {
   color: var(--light-black);
   font: 400 1.5rem var(--regular);
   width: 60%;
+}
+
+/* Technology container */
+.technology-container {
+  height: auto;
+  width: 100%;
+  padding: 2rem 0rem;
+}
+
+.technology-container > h2 {
+  color: var(--light-black);
+  font: 600 3.5rem var(--regular);
+  text-align: center;
+  letter-spacing: -2.04px;
+  line-height: 1;
+  margin-bottom: 4rem;
+}
+
+.techstack-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  border-collapse: collapse;
+  border: 0.1rem dashed rgba(0, 0, 0, 0.2);
+  border-right: none;
+  border-bottom: none;
+}
+
+.techstack-list > div {
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all ease 0.5s;
+  border-right: 0.1rem dashed rgba(0, 0, 0, 0.2);
+  border-bottom: 0.1rem dashed rgba(0, 0, 0, 0.2);
+}
+
+.techstack-list > div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 9rem;
+  width: 9rem;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.techstack-list > div span img {
+  height: auto;
+  width: 100%;
+}
+
+.next-box > span,
+.wix-box > span {
+  background-color: rgba(0, 0, 0, 0.055);
+}
+
+.react-box > span {
+  background-color: #edf7fb;
+}
+
+.svelte-box > span {
+  background-color: #fbf3f1;
+}
+
+.vue-box > span,
+.nuxt-box > span {
+  background-color: #edfbf5;
+}
+
+.angular-box > span {
+  background-color: rgba(221, 0, 48, 0.055);
+}
+
+.gatsby-box > span {
+  background-color: #6535ff14;
+}
+.php-box > span {
+  background-color: rgba(119, 123, 179, 0.096);
+}
+
+.shopify-box > span,
+.nodejs-box > span {
+  background-color: rgba(149, 191, 70, 0.082);
+}
+.wordpress-box > span {
+  background-color: rgba(33, 116, 155, 0.082);
+}
+
+.wordpress-box > span img {
+  width: 80% !important;
+}
+
+.shopify-box > span img,
+.wix-box > span img {
+  width: 70% !important;
+}
+
+.textEffect {
+  display: inline-block;
+}
+
+.framework-name {
+  overflow: hidden;
+}
+
+.lt,
+.rt {
+  display: inline-block;
 }
 @media only screen and (max-width: 1300px) {
   .sidebar {
@@ -354,6 +471,13 @@ main {
   .services-list-reverse {
     padding: 5rem 0rem 0rem;
   }
+  .techstack-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* .techstack-list > div {
+    min-width: 30%;
+  } */
 }
 @media only screen and (max-width: 576px) {
   #navbar,
