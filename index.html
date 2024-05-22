@@ -8,376 +8,256 @@
   </head>
   <body>
     <header>
-      <nav id="navbar">
-        <a href="index.html" class="logo"> Web<span>Denso.</span></a>
-        <button class="menu-btn" onclick="showMenu()">
-          <img
-            src="assets/icons/menu.svg"
-            alt="menu icon"
-            height="40"
-            width="40"
-            decoding="async"
-            loading="eager"
-          />
-        </button>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html" class="logo"> Webdenso </a>
+          <div class="services-parent">
+            <button class="services-btn" onclick="viewServices()">
+              Services
+              <img
+                src="assets/icons/down-chevron.svg"
+                alt="down chevron icon"
+                height="20"
+                width="20"
+                decoding="async"
+                loading="lazy"
+              />
+            </button>
+            <div class="services-container">
+              <a href="#">Web Development</a>
+              <a href="#">App Development</a>
+              <a href="#">Ecommerce Website</a>
+              <a href="#">SEO Optimization</a>
+            </div>
+          </div>
+          <button class="menu-btn">
+            <img
+              src="assets/icons/menu.svg"
+              alt="menu icon"
+              height="25"
+              width="25"
+              decoding="async"
+              loading="lazy"
+              onclick="viewMenu(this)"
+            />
+          </button>
+
+          <div class="navlinks-container">
+            <div class="navlinks-holder">
+              <a href="#">About</a>
+              <a href="#">Portfolio</a>
+              <a href="#">Careers</a>
+              <a href="#">Our Team</a>
+            </div>
+            <a href="#" class="contact-btn">
+              <span class="slight-glow"></span>
+              Contact Us</a
+            >
+          </div>
+        </div>
       </nav>
     </header>
-    <div class="sidebar">
-      <div class="menu-container">
-        <p>SOCIALS</p>
-        <a href="#">INSTGRAM</a>
-        <a href="#">LINKEDIN</a>
-        <a href="#">FACEBOOK</a>
-      </div>
-      <div class="menu-container">
-        <p>MENU</p>
-        <div>
-          <a href="#" class="menu-links">ABOUT</a>
-          <a href="#" class="menu-links">PORTFOLIO</a>
-          <a href="#" class="menu-links">PACKAGES</a>
-          <a href="#" class="menu-links">CONTACT</a>
-        </div>
-      </div>
-      <button class="close-btn" onclick="reverseMenu()">
-        <img
-          src="assets/icons/close.svg"
-          alt="close icon"
-          height="50"
-          width="50"
-          decoding="async"
-          loading="eager"
-        />
-      </button>
-    </div>
     <main>
-      <section class="hero-container">
-        <div class="hero-text">
-          <h1><span>Webdenso</span> - Crafting Innovative Web Solutions.</h1>
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1>Empowering Businesses Through Innovative Web Solutions</h1>
           <p>
-            We&apos;ll Help To Accelerate Online Growth Of Your Brand With
-            360°Solutions
+            Discover. Create. Elevate your digital presence with Webdenso - your
+            Lifetime Partner in Web Development
           </p>
-          <form action="" method="post" class="hero_form">
-            <input
-              type="text"
-              placeholder="Enter your name"
-              class="hero_inputs"
-            />
-            <input
-              type="email"
-              placeholder="Enter your email"
-              class="hero_inputs"
-            />
-            <button>get in touch</button>
-          </form>
+          <a href="#" class="contact-bigbtn">
+            <span class="slight-glow"></span>
+            Contact Us</a
+          >
+          <div class="herotxt-holder">
+            <p>
+              <img
+                src="assets/images/projects-image.webp"
+                alt="projects-image"
+                height="40"
+                width="40"
+                decoding="async"
+                loading="lazy"
+                class="herotxt-img"
+              />
+              50+ Successful Projects
+            </p>
+            <p>
+              <img
+                src="assets/icons/trustpilot-icon.svg"
+                alt="trustpilot-icon"
+                height="40"
+                width="40"
+                decoding="async"
+                loading="lazy"
+                class="herotxt-img"
+              />
+
+              4.9/5
+              <span class="herosm-txt"> (Trustpilot) </span>
+            </p>
+          </div>
         </div>
-        <div class="heroimg_holder">
+        <div class="heroimage-holder">
           <img
-            src="assets/images/hero_img.avif"
+            src="assets/images/hero-image.webp"
             alt="hero image"
             height="50"
             width="50"
             decoding="async"
-            loading="eager"
+            loading="lazy"
           />
         </div>
       </section>
-      <section class="services-container">
-        <h2 class="services-heading">
-          Transform Your Digital Presence with Webdenso
-        </h2>
-        <p class="services-para">
-          Whether you're launching a new site or upgrading your existing one,
-          Webdenso has all your web development needs covered.
-        </p>
-
-        <div class="services-list">
-          <div class="services-textbox webdev-textbox">
-            <p>SIMPLIFY</p>
-            <h3>Website Design & Development</h3>
-            <article>
-              Effortlessly create and manage your site, ensuring seamless
-              functionality and a stunning user experience.
-            </article>
+      <section class="hero2-section">
+        <div class="purple-blur"></div>
+        <div class="purple-blur2"></div>
+        <div class="hero-section">
+          <div class="hero-content">
+            <h2>Stuck on which tech to pick for your website</h2>
+            <p>
+              Let our expert team guide you to the perfect technology for your
+              needs
+            </p>
+            <a href="#" class="contact-bigbtn">
+              <span class="slight-glow"></span>
+              Get in touch</a
+            >
           </div>
-          <div class="services-image-holder webdev-image">
+          <div class="heroimage-holder">
             <img
-              src="assets/images/webdevelopment-illustraton.svg"
-              alt="web development illustraton"
+              src="assets/images/expert.webp"
+              alt="hero image"
               height="50"
               width="50"
-              loading="eager"
               decoding="async"
-              class="webdevelopment-illustration"
-            />
-          </div>
-        </div>
-        <div class="services-list-reverse">
-          <div class="services-textbox seo-textbox">
-            <p>AUTOMATE</p>
-            <h3>SEO</h3>
-            <article>
-              Effortlessly optimize and manage your site, ensuring top search
-              rankings and a smooth, engaging user experience.
-            </article>
-          </div>
-          <div class="services-image-holder seo-image">
-            <img
-              src="assets/images/seo-illustration.svg"
-              alt="web development illustraton"
-              height="50"
-              width="50"
-              loading="eager"
-              decoding="async"
-              class="seo-illustration"
-            />
-          </div>
-        </div>
-        <div class="services-list">
-          <div class="services-textbox appdev-textbox">
-            <p>SIMPLIFY</p>
-            <h3>App Development</h3>
-            <article>
-              Effortlessly design, develop, and launch your app, ensuring smooth
-              performance and a captivating user experience.
-            </article>
-          </div>
-          <div class="services-image-holder appdev-image">
-            <img
-              src="assets/images/app-development.svg"
-              alt="web development illustraton"
-              height="50"
-              width="50"
-              loading="eager"
-              decoding="async"
-              class="appdev-illustration"
+              loading="lazy"
             />
           </div>
         </div>
       </section>
-      <section class="technology-container">
-        <h2>
-          Your
-          <span class="framework-name">
-            <span class="textEffect">framework,</span>
+      <section class="hero3-section">
+        <div class="slider-wrapper">
+          <span class="websiteicon-holder">
+            <img
+              src="assets/icons/desktop-icon.svg"
+              alt="desktop icon"
+              height="30"
+              width="30"
+              decoding="async"
+              loading="eager"
+            />
           </span>
-          <br />
-          your way.
-        </h2>
-        <div class="techstack-list">
-          <div
-            class="next-box"
-            onmouseenter="enterEnter('Next.js,', '#101010')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/nextjs-icon.svg"
-                alt="nextjs-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
-          </div>
-          <div
-            class="react-box"
-            onmouseenter="enterEnter('React,', '#139ECA')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/reactjs-icon.svg"
-                alt="reactjs-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
-          </div>
-          <div
-            class="svelte-box"
-            onmouseenter="enterEnter('Svelte,', '#FF3E00')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/svelte-icon.svg"
-                alt="svelte-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
-          </div>
-          <div
-            class="vue-box"
-            onmouseenter="enterEnter('Vue,', '#41B883')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/vuejs-icon.svg"
-                alt="vuejs-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
-          </div>
-          <div
-            class="angular-box"
-            onmouseenter="enterEnter('Angular,', '#DD0031')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/angularjs-icon.svg"
-                alt="angularjs-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
-          </div>
-          <div
-            class="gatsby-box"
-            onmouseenter="enterEnter('Gatsby,', '#6533FF')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/gatsby-icon.svg"
-                alt="gatsby-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
-          </div>
-          <div
-            class="nuxt-box"
-            onmouseenter="enterEnter('Nuxt,', '#00DC82')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/nuxtjs-icon.svg"
-                alt="nuxtjs-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
-          </div>
-          <div
-            class="php-box"
-            onmouseenter="enterEnter('Php,', '#777BB3')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/php-icon.svg"
-                alt="php-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
-          </div>
-          <div
-            class="shopify-box"
-            onmouseenter="enterEnter('Shopify,', '#95BF46')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/shopify-icon.svg"
-                alt="shopify-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
-          </div>
-          <div
-            class="wordpress-box"
-            onmouseenter="enterEnter('Wordpress,', '#21759B')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/wordpress-icon.svg"
-                alt="wordpress-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
-          </div>
-          <div
-            class="wix-box"
-            onmouseenter="enterEnter('Wix,', '#000000')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/wix-icon.svg"
-                alt="wix-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
-          </div>
-          <div
-            class="nodejs-box"
-            onmouseenter="enterEnter('Node,', '#509941')"
-            onmouseleave="leaveBoxes()"
-          >
-            <span>
-              <img
-                src="assets/icons/nodejs-icon.svg"
-                alt="nodejs-icon"
-                height="40"
-                width="40"
-                loading="eager"
-                decoding="async"
-              />
-            </span>
+          <h2>Build Your Dream Website</h2>
+          <p>
+            Access expert-led modules, a gamified learning experience, and a
+            4-week immersive community bootcamp.
+          </p>
+
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slide">
+                <div class="caption">
+                  <h2>Webdevelopment</h2>
+                  <ul>
+                    <li><p>Interactive Online Platform to Learn</p></li>
+                    <li>
+                      <p>
+                        Modules on Frontend Development, Backend Development,
+                        and a Lot More...
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slideImage-holder">
+                  <img
+                    src="assets/images/webdev-mobile-view.webp"
+                    alt="webdev-mobile-view"
+                    height="50"
+                    width="50"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="caption">
+                  <h2>SEO Optimization</h2>
+                  <ul>
+                    <li><p>Optimize your whole website</p></li>
+                    <li>
+                      <p>Improve Google rannking in your niche</p>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="slideImage-holder">
+                  <img
+                    src="assets/images/seo-mobile-view.webp"
+                    alt="Stock Market"
+                    height="50"
+                    width="50"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="caption">
+                  <h2>App Development</h2>
+                  <ul>
+                    <li><p>Create your dream app</p></li>
+                    <li>
+                      <p>Scale your app</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="slideImage-holder">
+                  <img
+                    src="assets/images/appdev-mobile-view.webp"
+                    alt="appdev-mobile-view"
+                    height="50"
+                    width="50"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="pagination">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
           </div>
         </div>
       </section>
-      <section id="home-textEffect">
-        <h2>Let's Work to gether</h2>
+      <section class="hero2-section">
+        <div class="purple-blur"></div>
+        <div class="purple-blur2"></div>
+        <div class="hero3-section">
+          <div class="slider-wrapper">
+            <span class="websiteicon-holder">
+              <img
+                src="assets/icons/desktop-icon.svg"
+                alt="desktop icon"
+                height="30"
+                width="30"
+                decoding="async"
+                loading="eager"
+              />
+            </span>
+            <h2>Build Your Dream Website</h2>
+            <p>
+              Access expert-led modules, a gamified learning experience, and a
+              4-week immersive community bootcamp.
+            </p>
+          </div>
+        </div>
       </section>
-      <section class="testimonies"></section>
     </main>
     <footer></footer>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
-      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script defer src="assets/js/script.js"></script>
   </body>
 </html>
