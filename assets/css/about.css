@@ -1,0 +1,237 @@
+.about-hero,
+.fonders-container {
+  height: auto;
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+.about-hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.about-hero-cont1 {
+  display: flex;
+  align-items: center;
+}
+.about-hero-cont1 > h1 {
+  color: var(--black);
+  font: 800 7rem var(--SF-Semibold);
+}
+
+.about-hero-cont1 > h1 > span {
+  color: var(--goldenrod);
+}
+
+.about-hero-cont2 > img {
+  height: auto;
+  width: 100%;
+}
+
+.about-subheading {
+  color: var(--grey) !important;
+  font: 500 var(--big-para) var(--SF-Regular) !important;
+}
+
+.aboutwebdenso-container > h2,
+.fonders-container > h2 {
+  color: var(--black);
+  font: 600 var(--heading) var(--SF-Semibold);
+  margin-top: 1rem;
+}
+
+.aboutwebdenso-container > svg {
+  transform: translateY(-5%);
+}
+
+.aboutwebdenso-container > p {
+  color: var(--light-black);
+  font: 500 1.8rem var(--SF-Regular);
+  line-height: 2.3rem;
+}
+
+.webdenso-offerings {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.webdenso-offerings-box {
+  display: flex;
+  gap: 1rem;
+  padding: 2.4rem;
+  box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.05);
+  border-radius: var(--radius);
+}
+
+.webdenso-offerings-box > div > h3 {
+  font: 600 var(--big-para) var(--SF-Semibold);
+  margin-bottom: 0.8rem;
+}
+
+.webdenso-offerings-box > div > p {
+  color: var(--light-black);
+  font: 400 1.8rem var(--SF-Regular);
+}
+
+.fonders-container {
+  text-align: center;
+}
+
+.founders-box {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 80vh;
+  width: 60%;
+  background: url("../images/founders-background.webp") no-repeat center,
+    var(--black);
+  background-size: cover;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+
+.founder-text {
+  height: auto;
+  width: 100%;
+  background-color: #141414;
+  border-radius: var(--radius);
+  border: 0.1rem solid var(--goldenrod);
+  padding: 2rem;
+  text-align: left;
+}
+
+.founder-text > article {
+  color: #f4f4f4b4;
+  font: 600 1.9rem var(--SF-Semibold);
+}
+
+.founder-name {
+  margin: 2rem 0rem 0.5rem;
+  color: #f4f7f8;
+  font: 600 2.3rem var(--SF-Semibold);
+}
+
+.founded-company {
+  color: #f4f7f8b7;
+  font: 500 1.7rem var(--SF-Regular);
+}
+
+.founder-socials {
+  padding: 1.5rem 0rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.getintouch-container {
+  background: url("../images/getintouch-background.webp") no-repeat center,
+    var(--black);
+  background-size: cover;
+  border-radius: var(--radius);
+  margin-bottom: 3rem;
+}
+
+.getintouch-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.getintouch-heading > h2,
+.getintouch-heading > a {
+  color: var(--white);
+}
+
+.getintouch-heading > h2 {
+  font: 600 var(--heading) var(--SF-Semibold);
+  margin-bottom: 0.5rem;
+}
+
+.getintouch-heading > a {
+  font: 400 1.8rem var(--SF-Regular);
+}
+.bothinput-holder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.form-div,
+.about-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-form {
+  gap: 2rem;
+}
+
+.form-div > label {
+  color: #f4f7f8;
+  font: 500 2rem var(--SF-Regular);
+}
+
+.form-div > input {
+  color: var(--light-black);
+  padding: 1.5rem;
+  font: 500 1.8rem var(--SF-Regular);
+  border-radius: var(--round);
+  border: none;
+  background-color: var(--white);
+}
+
+.form-div > input::-webkit-outer-spin-button,
+.form-div > input::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+.form-div > input:focus {
+  outline: none;
+}
+
+.about-form > button {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: var(--goldenrod);
+  border: none;
+  font: 500 2rem var(--SF-Regular);
+  border-radius: var(--round);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+  .about-hero {
+    max-width: 96rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .about-hero {
+    max-width: 72rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .founders-box {
+    width: 80%;
+  }
+  .about-hero,
+  .fonders-container {
+    padding: 5rem 1rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .about-hero {
+    max-width: 54rem;
+  }
+  .bothinput-holder {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .founders-box {
+    width: 100%;
+  }
+  .getintouch-container {
+    margin: 0 1rem 3rem;
+  }
+}
