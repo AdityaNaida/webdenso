@@ -180,7 +180,7 @@ footer {
   border-radius: var(--round);
   overflow: hidden;
   z-index: 9;
-  border: 0.2rem solid var(--black);
+  border: 0.2rem solid goldenrod;
 }
 
 .slight-glow {
