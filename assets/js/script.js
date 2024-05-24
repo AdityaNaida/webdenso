@@ -65,3 +65,17 @@ faqs.forEach((e) => {
     }
   });
 });
+
+const viewCourseBtns = document.querySelectorAll(".viewMoreBtn");
+
+viewCourseBtns.forEach((e) => {
+  e.addEventListener("click", () => {
+    const prevElem = e.previousElementSibling;
+    prevElem.classList.toggle("h-full");
+    if (prevElem.classList.contains("h-full")) {
+      e.textContent = "View Less";
+    } else {
+      e.textContent = "View More";
+    }
+  });
+});

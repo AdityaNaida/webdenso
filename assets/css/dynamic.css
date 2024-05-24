@@ -1,3 +1,11 @@
+.package-wrapper {
+  height: auto;
+  width: 100%;
+  background: url("../images/getintouch-background.webp") center no-repeat,
+    var(--light-black);
+  background-size: cover;
+}
+
 .package-container {
   height: auto;
   max-width: 114rem;
@@ -6,12 +14,12 @@
 }
 
 .package-container > h2 {
-  color: var(--light-black);
+  color: var(--white);
   font: 600 var(--heading) var(--SF-Semibold);
 }
 
 .package-container > p {
-  color: var(--lb-textColor);
+  color: #f4f7f8c5;
   font: 400 2rem var(--SF-Regular);
 }
 
@@ -28,84 +36,105 @@
 }
 
 .package-heading > h3 {
-  color: var(--light-black);
+  color: var(--white);
   font: 600 3rem var(--SF-Semibold);
 }
 
 .package-list {
-  display: flex;
-  flex-direction: column;
-}
-
-.package-head,
-.package-body {
   display: grid;
-  grid-template-columns: 25% 50% 25%;
-  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  height: auto;
+  width: 100%;
 }
 
-.package-body {
-  border-top: none;
-}
-
-.package-header,
-.package-td {
+.package-box {
   padding: 2rem;
+  border-radius: 1rem;
+  transition: all ease 0.5s;
   text-align: left;
-  border-right: 0.1rem solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.2rem 0.8rem rgba(28, 28, 28, 0.08);
+  border: 0.1rem solid #e8e8e8;
+  background-color: var(--white);
 }
 
-.package-header:nth-child(2) {
-  background-color: var(--goldenrod);
-}
-.package-header:last-child {
-  border: none;
+.package-box:last-child {
+  background-color: #fff2c3;
 }
 
-.package-header > p {
-  font: 500 2.3rem var(--SF-Regular);
-}
-
-.package-td {
-  padding: 4rem 2rem;
-}
-
-.package-td:nth-child(2) {
-  background-color: #ecd99621;
-}
-
-.package-type {
-  color: var(--light-black);
-  font: 600 var(--big-para) var(--SF-Semibold);
-}
-
-.featured-text,
-.featured-bold {
-  color: var(--light-black);
-  font: 400 1.8rem var(--SF-Regular);
-  margin-bottom: 1rem;
-}
-
-.price-container {
-  text-align: center;
-  border-right: none;
-}
-
-.start-txt {
-  font: 400 var(--para) var(--SF-Regular);
+.package-title {
+  font: 600 2.5rem var(--SF-Semibold);
   margin-bottom: 0.5rem;
 }
 
-.package-price {
-  color: var(--light-black);
-  font: 600 3rem var(--SF-Semibold);
-  margin-bottom: 0.8rem;
+.package-desc {
+  color: var(--grey);
+  font: 500 var(--para) var(--SF-Regular);
 }
 
-.package-before-price {
-  color: var(--grey);
-  font: 600 2rem var(--SF-Regular);
-  text-decoration: line-through;
+.course-price {
+  display: flex;
+  gap: 0.5rem;
+  margin: 2rem 0rem 2rem;
+}
+
+.course-price > span {
+  color: var(--light-black);
+  font: 500 1.4rem var(--SF-Regular);
+}
+
+.course-price > p {
+  color: var(--light-black);
+  font: 600 4rem var(--SF-Semibold);
+}
+
+.plan-details {
+  list-style: none;
+  height: 10rem;
+  padding: 1rem 0rem;
+  margin-bottom: 2rem;
+  color: #212121;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  overflow-y: hidden;
+}
+
+.plan-details > li {
+  font: 500 1.6rem var(--SF-Regular);
+  line-height: 3rem;
+}
+
+.plans-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+.viewMoreBtn {
+  display: block;
+  width: fit-content;
+  margin: auto;
+  color: #19ad6f;
+  font: 500 1.7rem var(--SF-Regular);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.choose-plan-btn {
+  display: block;
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  background-color: #19ad6f;
+  color: var(--white);
+  font: 500 2.3rem var(--SF-Regular);
+  text-align: center;
+}
+
+.h-full {
+  height: auto !important;
 }
 
 @media only screen and (max-width: 992px) {
@@ -123,6 +152,10 @@
   .package-container {
     padding: 5rem 1rem;
   }
+
+  .package-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 @media only screen and (max-width: 576px) {
   .dynamic-container,
@@ -130,27 +163,8 @@
     max-width: 54rem;
   }
 
-  .package-head {
-    display: none;
-  }
-  .package-body {
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-    grid-template-columns: 100%;
-    box-shadow: 0 0.2rem 0.8rem rgba(28, 28, 28, 0.08);
-    border: 0.1rem solid #e8e8e8;
-    border-radius: var(--radius);
-  }
-
   .package-heading {
     justify-content: center;
     flex-wrap: wrap;
-  }
-
-  .package-list {
-    gap: 2rem;
-  }
-
-  .package-td {
-    border: none;
   }
 }
