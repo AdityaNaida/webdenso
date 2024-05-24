@@ -5,7 +5,7 @@
   height: auto;
   max-width: 114rem;
   margin: 0 auto;
-  padding: 5rem 2rem;
+  padding: 8rem 2rem;
 }
 
 .contact-details-container {
@@ -128,6 +128,7 @@
   .contactus-container {
     max-width: 72rem;
     grid-template-columns: repeat(1, 1fr);
+    padding: 5rem 1rem;
   }
 }
 @media only screen and (max-width: 576px) {

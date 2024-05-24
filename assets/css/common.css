@@ -265,17 +265,18 @@ footer {
 }
 
 /* Faq */
-
+.faq-container {
+  text-align: center;
+}
 .faq-container > h2 {
   color: var(--light-black);
   font: 600 var(--heading) var(--SF-Semibold);
-  text-align: center;
 }
 
 .faqlists {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
   padding: 2rem 0rem;
 }
 
@@ -291,6 +292,7 @@ footer {
   justify-content: space-between;
   font: 600 2.3rem var(--SF-Semibold);
   cursor: pointer;
+  text-align: left;
 }
 
 .faq-answer {
@@ -299,6 +301,7 @@ footer {
   font: 500 2rem var(--SF-Regular);
   line-height: 3rem;
   padding-top: 1em;
+  text-align: left;
 }
 
 .block-faq {
