@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development</title>
+    <link rel="stylesheet" href="assets/css/common.css" />
+    <link rel="stylesheet" href="assets/css/dynamic.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <a href="index.html" class="logo"> Webdenso </a>
+          <div class="services-parent">
+            <button class="services-btn" onclick="viewServices()">
+              Services
+              <img
+                src="assets/icons/down-chevron.svg"
+                alt="down chevron icon"
+                height="20"
+                width="20"
+                decoding="async"
+                loading="lazy"
+              />
+            </button>
+            <div class="services-container">
+              <a href="dynamic.html">Web Development</a>
+              <a href="dynamic.html">App Development</a>
+              <a href="dynamic.html">Ecommerce Website</a>
+              <a href="dynamic.html">SEO Optimization</a>
+            </div>
+          </div>
+          <button class="menu-btn">
+            <img
+              src="assets/icons/menu.svg"
+              alt="menu icon"
+              height="25"
+              width="25"
+              decoding="async"
+              loading="lazy"
+              onclick="viewMenu(this)"
+            />
+          </button>
+
+          <div class="navlinks-container">
+            <div class="navlinks-holder">
+              <a href="about-us.html">About</a>
+              <a href="#">Portfolio</a>
+              <a href="#">Careers</a>
+              <a href="#">Our Team</a>
+            </div>
+            <a href="#" class="contact-btn">
+              <span class="slight-glow"></span>
+              Contact Us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="package-container">
+        <h2>Flexible & Transparent Pricing</h2>
+        <p></p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 173 44"
+          width="173"
+          height="44"
+          preserveAspectRatio="xMidYMid meet"
+        >
+          <defs>
+            <clipPath id="__lottie_element_6">
+              <rect width="173" height="44" x="0" y="0"></rect>
+            </clipPath>
+          </defs>
+          <g clip-path="url(#__lottie_element_6)">
+            <g
+              transform="matrix(1,0,0,1,86.5,22)"
+              opacity="1"
+              style="display: block"
+            >
+              <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="miter"
+                  fill-opacity="0"
+                  stroke-miterlimit="4"
+                  stroke="rgb(236,217,149)"
+                  stroke-opacity="1"
+                  stroke-width="5"
+                  d=" M-77.5,1 C-77.5,1 -22.75,-3.75 -4,-3.75 C14.75,-3.75 70.75,-0.5 70.75,-0.5"
+                ></path>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <p>
+          Experience web development services with flexible and transparent
+          pricing, ensuring you get the best value for your investment. No
+          hidden fees, just clear and honest costs tailored to your needs.
+        </p>
+        <div class="package-heading">
+          <h3>Webdevelopment Packages</h3>
+
+          <a href="#" class="contact-bigbtn">
+            <span class="slight-glow"></span>
+            Request A Quote
+            <img
+              src="assets/icons/arrow-forward.svg"
+              alt="arrow forward icon"
+              height="25"
+              width="25"
+              decoding="async"
+              loading="lazy"
+          /></a>
+        </div>
+        <div class="package-list">
+          <div class="package-head">
+            <div class="package-header">
+              <p>Category</p>
+            </div>
+            <div class="package-header">
+              <p>Features</p>
+            </div>
+            <div class="package-header">
+              <p>Price</p>
+            </div>
+          </div>
+          <div class="package-body">
+            <div class="package-td">
+              <p class="package-type">Basic</p>
+            </div>
+            <div class="package-td">
+              <p class="featured-text">
+                1 Domain Name, 10 Web Pages including 1 Home page, SEO Semantic
+                Html 5 Code, HTML 5 Sitemap Page, Fully Mobile Compatible
+              </p>
+              <p class="featured-bold">
+                <strong>2 Design Concepts, 2 Revisions</strong>
+              </p>
+            </div>
+            <div class="package-td price-container">
+              <p class="start-txt">Starting from</p>
+              <p class="package-price"><strong>$400</strong></p>
+              <p class="package-before-price">$600</p>
+            </div>
+          </div>
+          <div class="package-body">
+            <div class="package-td">
+              <p class="package-type">Enhance</p>
+            </div>
+            <div class="package-td">
+              <p class="featured-text">
+                1 Domain Name, 15 Web Pages including 1 Home page, SEO Semantic
+                Html 5 Code, HTML 5 Sitemap Page, Fully Mobile Compatible
+              </p>
+              <p class="featured-bold">
+                <strong>3 Design Concepts, 5 Revisions</strong>
+              </p>
+              <p class="featured-bold">
+                <strong>FREE: Search Engine Submission</strong>
+              </p>
+            </div>
+            <div class="package-td price-container">
+              <p class="start-txt">Starting from</p>
+              <p class="package-price"><strong>$800</strong></p>
+              <p class="package-before-price">$1000</p>
+            </div>
+          </div>
+          <div class="package-body">
+            <div class="package-td">
+              <p class="package-type">Premium</p>
+            </div>
+            <div class="package-td">
+              <p class="featured-text">
+                1 Domain Name, 50 Web Pages including 1 Home page, SEO Semantic
+                Html 5 Code, HTML 5 Sitemap Page, Fully Mobile Compatible
+              </p>
+              <p class="featured-bold">
+                <strong>3 Design Concepts, Unlimited Revisions</strong>
+              </p>
+              <p class="featured-bold">
+                <strong
+                  >FREE: Hosting for one year, Search Engine Submission</strong
+                >
+              </p>
+            </div>
+            <div class="package-td price-container">
+              <p class="start-txt">Starting from</p>
+              <p class="package-price"><strong>$1200</strong></p>
+              <p class="package-before-price">$1400</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq-container">
+        <h2>FAQ</h2>
+        <div class="faqlists">
+          <div class="faq-holder">
+            <h5 class="faq-question">
+              How do I get started with Webdenso for my web development project?
+              <img
+                src="assets/icons/plus.svg"
+                alt="plus icon"
+                height="30"
+                width="30"
+                decoding="async"
+                loading="lazy"
+              />
+            </h5>
+            <div class="faq-answer">
+              To get started, you can contact Webdenso through our website,
+              email, or phone. We&apos;ll schedule a consultation to discuss
+              your project requirements and provide you with a customized
+              proposal and timeline.
+            </div>
+          </div>
+          <div class="faq-holder">
+            <h5 class="faq-question">
+              How does Webdenso ensure website security?
+              <img
+                src="assets/icons/plus.svg"
+                alt="plus icon"
+                height="30"
+                width="30"
+                decoding="async"
+                loading="lazy"
+              />
+            </h5>
+            <div class="faq-answer">
+              Webdenso prioritizes security by implementing robust security
+              measures such as SSL certificates, regular security audits, secure
+              coding practices, and real-time monitoring to protect your website
+              from potential threats.
+            </div>
+          </div>
+          <div class="faq-holder">
+            <h5 class="faq-question">
+              Can Webdenso integrate third-party services and APIs into my
+              website?
+              <img
+                src="assets/icons/plus.svg"
+                alt="plus icon"
+                height="30"
+                width="30"
+                decoding="async"
+                loading="lazy"
+              />
+            </h5>
+            <div class="faq-answer">
+              Absolutely, Webdenso has extensive experience integrating
+              third-party services and APIs, including payment gateways, social
+              media platforms, CRM systems, and more, to enhance the
+              functionality of your website
+            </div>
+          </div>
+          <div class="faq-holder">
+            <h5 class="faq-question">
+              Does Webdenso offer custom web development solutions?
+              <img
+                src="assets/icons/plus.svg"
+                alt="plus icon"
+                height="30"
+                width="30"
+                decoding="async"
+                loading="lazy"
+              />
+            </h5>
+            <div class="faq-answer">
+              Yes, Webdenso specializes in custom web development to meet the
+              unique requirements of your business. We work closely with you to
+              understand your goals and create a bespoke solution that aligns
+              with your vision.
+            </div>
+          </div>
+          <div class="faq-holder">
+            <h5 class="faq-question">
+              How does Webdenso handle SEO during the web development process?
+              <img
+                src="assets/icons/plus.svg"
+                alt="plus icon"
+                height="30"
+                width="30"
+                decoding="async"
+                loading="lazy"
+              />
+            </h5>
+            <div class="faq-answer">
+              Webdenso incorporates SEO best practices from the ground up,
+              including optimizing site structure, using clean code, and
+              implementing on-page SEO elements such as meta tags, alt
+              attributes, and keyword optimization to improve search engine
+              rankings.
+            </div>
+          </div>
+          <div class="faq-holder">
+            <h5 class="faq-question">
+              What is the typical timeline for a web development project with
+              Webdenso?
+              <img
+                src="assets/icons/plus.svg"
+                alt="plus icon"
+                height="30"
+                width="30"
+                decoding="async"
+                loading="lazy"
+              />
+            </h5>
+            <div class="faq-answer">
+              The timeline for a web development project varies depending on the
+              complexity and scope. However, most projects are completed within
+              4-12 weeks. WebDenso provides a detailed project plan and timeline
+              at the start of each project.
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="seo-content">
+        <div>
+          <h2>Welcome to Web Denso: Your Trusted IT Partner</h2>
+          <p>
+            At Web Denso, we specialize in delivering top-tier IT solutions
+            tailored to your unique needs. As a leading IT company, we offer a
+            comprehensive range of services including web development, SEO
+            optimization, and app development. Our team of experienced
+            professionals is dedicated to helping your business thrive in the
+            digital landscape.
+          </p>
+          <h3>Web Development Services</h3>
+          <p>
+            Our web development team creates visually stunning, responsive, and
+            user-friendly websites that effectively represent your brand. From
+            concept to launch, we ensure every aspect of your site is optimized
+            for performance and user experience.
+          </p>
+          <ul class="seo-ul">
+            <li>Custom Website Design</li>
+            <li>E-commerce Solutions</li>
+            <li>Content Management Systems (CMS)</li>
+            <li>Website Maintenance & Support</li>
+          </ul>
+          <h3>SEO Optimization Services</h3>
+          <p>
+            Boost your online visibility with our expert SEO services. We
+            implement proven strategies to enhance your search engine rankings,
+            drive organic traffic, and increase your online presence.
+          </p>
+          <ul class="seo-ul">
+            <li>Keyword Research & Analysis</li>
+            <li>On-page & Off-page SEO</li>
+            <li>Technical SEO</li>
+            <li>SEO Audits & Reporting</li>
+          </ul>
+          <h3>App Development Services</h3>
+          <p>
+            Transform your ideas into innovative mobile applications with our
+            app development services. We build high-quality, scalable apps that
+            provide an exceptional user experience across all devices.
+          </p>
+          <ul class="seo-ul">
+            <li>iOS & Android App Development</li>
+            <li>Cross-platform App Development</li>
+            <li>UI/UX Design</li>
+            <li>App Testing & Quality Assurance</li>
+            <li>App Maintenance & Updates</li>
+          </ul>
+          <h3>Why Choose Web Denso?</h3>
+          <ul class="seo-ul">
+            <li>
+              <b>Experienced Team:</b> Our skilled professionals bring years of
+              industry experience and technical expertise to every project.
+            </li>
+            <li>
+              <b>Customer-Centric Approach:</b> We prioritize your needs and
+              work closely with you to achieve your business goals.
+            </li>
+            <li>
+              <b>Innovative Solutions</b>We leverage the latest technologies and
+              best practices to deliver cutting-edge solutions.
+            </li>
+            <li>
+              <b>Proven Track Record:</b>Our portfolio showcases successful
+              projects across various industries, highlighting our commitment to
+              excellence.
+            </li>
+          </ul>
+          <p>
+            Partner with Web Denso and take your digital presence to the next
+            level. Contact us today to discuss your project and discover how we
+            can help you achieve your IT goals.
+          </p>
+        </div>
+      </section>
+      <section class="about-hero getintouch-container">
+        <div class="getintouch-heading">
+          <h2>Request A Quote</h2>
+          <a href="tel:7278586820">+91 72785 86820</a>
+        </div>
+        <form action="" method="post" class="about-form">
+          <div class="bothinput-holder">
+            <div class="form-div">
+              <label for="user_name">Name</label>
+              <input
+                type="text"
+                placeholder="Enter your name"
+                id="user_name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form-div">
+              <label for="user_number">Number</label>
+              <input
+                type="tel"
+                placeholder="Enter your number"
+                id="user_number"
+                name="number"
+                required
+                maxlength="10"
+              />
+            </div>
+          </div>
+          <div class="form-div">
+            <label for="user_email">Email</label>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="user_email"
+              name="email"
+              required
+            />
+          </div>
+          <button>Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <div class="nested-footer">
+        <div class="footer-links">
+          <div class="footer-logoholder">
+            <a href="index.html" class="logo">Webdenso</a>
+          </div>
+          <div class="footer-linksholder">
+            <div>
+              <p>Pages</p>
+              <div class="footer-links-list">
+                <a href="index.html">Home</a>
+                <a href="about-us.html">About</a>
+                <a href="#">Portfolio</a>
+              </div>
+            </div>
+            <div>
+              <p>Support</p>
+              <div class="footer-links-list">
+                <a href="#">Contact Us</a>
+                <a href="#">FAQs</a>
+                <a href="#">Career</a>
+                <a href="#">Our Team</a>
+              </div>
+            </div>
+            <div>
+              <p>Legal</p>
+              <div class="footer-links-list">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">FB Discliamer</a>
+              </div>
+            </div>
+            <div>
+              <p>Social Media</p>
+              <div class="footer-social-medias">
+                <a href="#">
+                  <img
+                    src="assets/icons/instagram-icon.svg"
+                    alt="instagram icon"
+                    height="20"
+                    width="20"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="assets/icons/twitter.svg"
+                    alt="twitter icon"
+                    height="20"
+                    width="20"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    src="assets/icons/linkedin-icon.svg"
+                    alt="twitter icon"
+                    height="20"
+                    width="20"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </a>
+              </div>
+              <div class="verified-box">
+                <img
+                  src="assets/icons/verify-icon.webp"
+                  alt="verified icon"
+                  height="25"
+                  width="25"
+                  decoding="async"
+                  loading="lazy"
+                />
+                Verified by Google
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sub-footer">
+          <p>2024 - &copy; All Rights Reserved</p>
+        </div>
+      </div>
+    </footer>
+
+    <script defer src="assets/js/script.js"></script>
+  </body>
+</html>
