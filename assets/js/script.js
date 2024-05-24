@@ -21,6 +21,11 @@ function viewMenu(imgSrc) {
   }
   document.querySelector(".navlinks-container").classList.toggle("menuFadeIn");
 }
+function talkWithUs() {
+  const talkBox = document.querySelector("#talkContainer");
+  talkBox.scrollIntoView({ behavior: "smooth" });
+}
+
 try {
   let slideIndex = 1;
   showSlides(slideIndex);
