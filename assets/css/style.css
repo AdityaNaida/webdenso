@@ -17,13 +17,17 @@
   width: 80%;
   margin: auto;
 }
-
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  direction: ltr;
+}
 .hero-content > h1,
 .hero-content > h2,
 .slider-wrapper > h2,
 .slider-wrapper > h3 {
   font: 600 var(--heading) var(--SF-Semibold);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .hero-content > h2,
 .slider-wrapper > h3 {
@@ -48,7 +52,8 @@
 }
 
 .herotxt-holder > p {
-  font: 500 var(--para) var(--SFtxt-Regular);
+  color: var(--light-black);
+  font: 600 2rem var(--SF-Semibold);
 }
 
 .herotxt-img {
