@@ -90,15 +90,16 @@
 
 .box-icons {
   display: inline-block;
-  padding: 0.5rem;
+  padding: 0.8rem;
   border-radius: 50%;
   background-color: #ecd99628;
 }
 
 .box-icons > img {
-  height: 5rem;
-  width: 5rem;
+  height: 4rem;
+  width: 4rem;
   vertical-align: middle;
+  opacity: 0.6;
 }
 
 @media only screen and (max-width: 992px) {
@@ -115,6 +116,7 @@
 
   .portfolio-container {
     grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -122,5 +124,9 @@
   .wearebest-container {
     padding: 5rem 1rem;
     max-width: 54rem;
+  }
+
+  .portfolio-imageholder > img {
+    width: 100%;
   }
 }
