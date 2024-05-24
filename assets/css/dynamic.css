@@ -156,6 +156,11 @@
   .package-list {
     grid-template-columns: repeat(1, 1fr);
   }
+  .package-wrapper {
+    background: url("../icons/grid-lines.svg") center no-repeat,
+      var(--light-black);
+    background-size: cover;
+  }
 }
 @media only screen and (max-width: 576px) {
   .dynamic-container,

@@ -51,7 +51,6 @@ try {
     showSlides(slideIndex);
   }, 3000);
 } catch (error) {}
-
 const faqs = document.querySelectorAll(".faq-question");
 faqs.forEach((e) => {
   e.addEventListener("click", () => {
@@ -65,17 +64,17 @@ faqs.forEach((e) => {
     }
   });
 });
-
-const viewCourseBtns = document.querySelectorAll(".viewMoreBtn");
-
-viewCourseBtns.forEach((e) => {
-  e.addEventListener("click", () => {
-    const prevElem = e.previousElementSibling;
-    prevElem.classList.toggle("h-full");
-    if (prevElem.classList.contains("h-full")) {
-      e.textContent = "View Less";
-    } else {
-      e.textContent = "View More";
-    }
+try {
+  const viewCourseBtns = document.querySelectorAll(".viewMoreBtn");
+  viewCourseBtns.forEach((e) => {
+    e.addEventListener("click", () => {
+      const prevElem = e.previousElementSibling;
+      prevElem.classList.toggle("h-full");
+      if (prevElem.classList.contains("h-full")) {
+        e.textContent = "View Less";
+      } else {
+        e.textContent = "View More";
+      }
+    });
   });
-});
+} catch (error) {}
