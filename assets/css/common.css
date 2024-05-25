@@ -540,6 +540,40 @@ footer {
   border-radius: var(--round);
   background-color: #262626;
 }
+
+/* Privacy Policy Container */
+
+.common-txt-container {
+  height: auto;
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+}
+
+.common-txt-container > h1 {
+  color: var(--light-black);
+  font: 600 var(--heading) var(--SF-Semibold);
+  margin-bottom: 2rem;
+}
+
+.common-txt-container > h2 {
+  color: var(--black);
+  font: 600 2.8rem var(--SF-Semibold);
+}
+
+.common-txt-container > p,
+.common-ul-tag > li {
+  color: var(--lb-textColor);
+  font: 500 2rem var(--SF-Regular);
+  margin: 1rem 0rem;
+  line-height: 3rem;
+}
+
+.common-ul-tag {
+  margin: 1rem 0rem;
+  padding: 0rem 3rem;
+}
+
 @media only screen and (max-width: 992px) {
   html {
     font-size: 55%;
@@ -548,7 +582,8 @@ footer {
   .seo-content > div,
   .faq-container,
   .nested-footer,
-  .about-hero {
+  .about-hero,
+  .common-txt-container {
     max-width: 96rem;
   }
 
@@ -578,7 +613,8 @@ footer {
 
   .seo-content > div,
   .faq-container,
-  .nested-footer {
+  .nested-footer,
+  .common-txt-container {
     max-width: 72rem;
   }
 
@@ -628,13 +664,18 @@ footer {
     width: fit-content;
     margin: 1rem auto;
   }
+
+  .common-txt-container {
+    padding: 5rem 1rem;
+  }
 }
 @media only screen and (max-width: 576px) {
   .navbar-container,
   .seo-content > div,
   .faq-container,
   .nested-footer,
-  .about-hero {
+  .about-hero,
+  .common-txt-container {
     max-width: 54rem;
   }
 
