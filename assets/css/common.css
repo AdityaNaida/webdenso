@@ -26,6 +26,7 @@ html {
   --SF-Semibold: "SF-Pro-Display-SemiBold", sans-serif;
   --SFtxt-Light: "SF-Text-Light", sans-serif;
   --SFtxt-Regular: "SF-Text-Regular", sans-serif;
+  --circle: 50%;
   --round: 10rem;
   --radius: 1rem;
   --para: 1.5rem;

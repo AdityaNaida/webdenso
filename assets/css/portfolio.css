@@ -1,5 +1,6 @@
 .portfolio-container,
-.wearebest-container {
+.wearebest-container,
+.approach-container {
   height: auto;
   max-width: 114rem;
 
@@ -30,11 +31,13 @@
   margin-bottom: 3rem;
 }
 .portfolio-content > h1,
-.wearebest-container > h2 {
+.wearebest-container > h2,
+.approach-container > h2 {
   font: 600 var(--heading) var(--SF-Semibold);
 }
 
-.portfolio-content > article {
+.portfolio-content > article,
+.approach-container > article {
   font: 500 2rem var(--SF-Regular);
 }
 
@@ -82,6 +85,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  text-align: left;
 }
 
 .wearebest-wrapper {
@@ -92,36 +96,102 @@
   display: inline-block;
   padding: 0.8rem;
   border-radius: 50%;
-  background-color: #ecd99628;
+  background-color: var(--light-black);
 }
 
 .box-icons > img {
   height: 4rem;
   width: 4rem;
   vertical-align: middle;
-  opacity: 0.6;
 }
 
+.wearebest-box > h2,
+.approach-txtholder > h2 {
+  color: var(--black);
+  font: 600 var(--big-para) var(--SF-Semibold);
+}
+.wearebest-box > h2 {
+  margin-top: 2rem;
+}
+
+.wearebest-box > p,
+.approach-txtholder > p {
+  margin-top: 1rem;
+  color: var(--lb-textColor);
+  font: 500 1.8rem var(--SF-Regular);
+}
+
+.approach-container {
+  text-align: center;
+}
+
+.approach-container > p {
+  margin-bottom: 2rem;
+  color: goldenrod;
+  font: 500 1.8rem var(--SF-Semibold);
+}
+
+.approach-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  padding: 2rem 0rem;
+}
+
+.approach-box {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  box-shadow: 2rem 2rem 5rem 0.5rem
+    rgba(162.00000000000003, 172.00000000000006, 202.00000000000003, 0.15);
+  border-radius: var(--radius);
+  background-color: var(--white);
+}
+
+.approach-iconholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  width: 6rem;
+  padding: 1rem;
+  border-radius: var(--circle);
+}
+
+.approach-txtholder {
+  text-align: left;
+}
 @media only screen and (max-width: 992px) {
   .portfolio-container,
-  .wearebest-container {
+  .wearebest-container,
+  .approach-container {
     max-width: 96rem;
   }
 }
 @media only screen and (max-width: 768px) {
   .portfolio-container,
-  .wearebest-container {
+  .wearebest-container,
+  .approach-container {
     max-width: 72rem;
   }
 
-  .portfolio-container {
+  .portfolio-container,
+  .wearebest-boxes,
+  .approach-boxes {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio-container {
     gap: 5rem;
+  }
+  .wearebest-boxes,
+  .approach-boxes {
+    gap: 2rem;
   }
 }
 @media only screen and (max-width: 576px) {
   .portfolio-container,
-  .wearebest-container {
+  .wearebest-container,
+  .approach-container {
     padding: 5rem 1rem;
     max-width: 54rem;
   }
