@@ -13,7 +13,7 @@
   padding: 5rem 2rem;
 }
 
-.package-container > h2 {
+.package-container > h1 {
   color: var(--white);
   font: 600 var(--heading) var(--SF-Semibold);
 }
@@ -49,6 +49,7 @@
 }
 
 .package-box {
+  position: relative;
   padding: 2rem;
   border-radius: 1rem;
   transition: all ease 0.5s;
@@ -58,8 +59,21 @@
   background-color: var(--white);
 }
 
-.package-box:last-child {
+.package-box:nth-child(2) {
   background-color: #fff2c3;
+}
+
+.popular-txt {
+  position: absolute;
+  top: -8%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: var(--light-black);
+  color: var(--goldenrod);
+  font: 500 2rem var(--SF-Regular);
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--round);
+  border: 0.2rem solid goldenrod;
 }
 
 .package-title {

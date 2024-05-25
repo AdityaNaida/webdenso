@@ -1,6 +1,10 @@
 const servicesContainer = document.querySelector(".services-container");
+const portfolioContainer = document.querySelector(".portfolio-links");
 function viewServices() {
   servicesContainer.classList.toggle("flex");
+}
+function viewPortfolio() {
+  portfolioContainer.classList.toggle("flex");
 }
 document.addEventListener("click", (e) => {
   if (
@@ -8,6 +12,13 @@ document.addEventListener("click", (e) => {
     e.target !== document.querySelector(".services-btn")
   ) {
     servicesContainer.classList.remove("flex");
+  }
+
+  if (
+    !portfolioContainer.contains(e.target) &&
+    e.target !== document.querySelector(".portfolio-btn")
+  ) {
+    portfolioContainer.classList.remove("flex");
   }
 });
 let a = 1;

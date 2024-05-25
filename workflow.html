@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webdenso | Portfolio</title>
+    <title>Webdenso | Work Flow</title>
     <link rel="stylesheet" href="assets/css/common.css" />
-    <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <link rel="stylesheet" href="assets/css/workflow.css" />
   </head>
   <body>
     <header>
@@ -46,14 +46,37 @@
           <div class="navlinks-container">
             <div class="navlinks-holder">
               <a href="about-us.html">About</a>
-              <a href="portfolio.html">Portfolio</a>
-              <a href="#">Careers</a>
-              <a href="#">Our Team</a>
+              <a href="workflow.html">Work Flow</a>
             </div>
-            <a href="contact.html" class="contact-btn">
-              <span class="slight-glow"></span>
-              Contact Us</a
-            >
+            <div class="contactlinks-container">
+              <div class="portfolio-parent">
+                <button class="portfolio-btn" onclick="viewPortfolio()">
+                  Portfolio
+                  <img
+                    src="assets/icons/down-chevron.svg"
+                    alt="down chevron icon"
+                    height="20"
+                    width="20"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </button>
+                <div class="portfolio-links">
+                  <a href="portfolio-webdevelopment.html"
+                    >Webdevelopment Portfolio</a
+                  >
+                  <a href="portfolio-appdevelopment.html"
+                    >App development Potfolio</a
+                  >
+                  <a href="portfolio-logo.html">Logo Portfolio</a>
+                  <a href="dynamic.html">Marketing Portfolio</a>
+                </div>
+              </div>
+              <a href="contact.html" class="contact-btn">
+                <span class="slight-glow"></span>
+                Contact Us</a
+              >
+            </div>
           </div>
         </div>
       </nav>

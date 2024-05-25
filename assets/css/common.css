@@ -89,7 +89,8 @@ footer {
   color: var(--goldenrod);
   margin-right: 4rem;
 }
-.services-parent {
+.services-parent,
+.portfolio-parent {
   position: relative;
 }
 .services-btn {
@@ -97,7 +98,7 @@ footer {
   margin-right: 2rem;
 
   color: var(--white);
-  font: 500 1.5rem var(--SFtxt-Light);
+  font: 500 1.6rem var(--SFtxt-Light);
   border: 0.1rem solid var(--white);
   border-radius: var(--round);
   white-space: nowrap;
@@ -113,7 +114,8 @@ footer {
   vertical-align: middle;
 }
 
-.services-container {
+.services-container,
+.portfolio-links {
   position: absolute;
   top: 110%;
   display: none;
@@ -122,10 +124,11 @@ footer {
   background-color: var(--light-black);
   border-radius: 1rem;
   padding: 2rem;
-  z-index: 9;
+  z-index: 19;
 }
 
-.services-container > a {
+.services-container > a,
+.portfolio-links > a {
   padding: 1rem 1.5rem;
   font: 500 1.5rem var(--SFtxt-Light);
   white-space: nowrap;
@@ -134,7 +137,8 @@ footer {
   transition: all ease 0.4s;
 }
 
-.services-container > a:hover {
+.services-container > a:hover,
+.portfolio-links > a:hover {
   background-color: #ffffff28;
 }
 
@@ -159,6 +163,24 @@ footer {
   width: 100%;
 }
 
+.contactlinks-container {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.portfolio-btn {
+  color: var(--white);
+  font: 500 1.6rem var(--SFtxt-Light);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.portfolio-btn > img {
+  vertical-align: middle;
+}
+
 .navlinks-holder {
   display: flex;
   align-items: center;
@@ -171,7 +193,8 @@ footer {
 }
 
 .contact-btn,
-.contact-bigbtn {
+.contact-bigbtn,
+.normal-btn {
   display: inline-block;
   position: relative;
   padding: 1.5rem 2rem;
@@ -185,10 +208,11 @@ footer {
   white-space: nowrap;
   cursor: pointer;
 }
-
+.normal-btn {
+  font-size: 2rem;
+}
 .contact-bigbtn {
   display: block;
-  margin: 2rem 0rem 3rem;
   font-size: 2rem;
   width: fit-content;
   margin: 2rem auto;
@@ -577,9 +601,14 @@ footer {
     z-index: 3;
     top: 5% !important;
   }
-  .navlinks-holder {
+  .navlinks-holder,
+  .contactlinks-container {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .contactlinks-container {
+    justify-content: center;
   }
 
   .services-container {
@@ -589,6 +618,15 @@ footer {
   .about-hero {
     max-width: 72rem;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .portfolio-links {
+    position: relative;
+  }
+  .portfolio-btn {
+    display: block;
+    width: fit-content;
+    margin: 1rem auto;
   }
 }
 @media only screen and (max-width: 576px) {

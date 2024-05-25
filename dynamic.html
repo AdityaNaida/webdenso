@@ -46,14 +46,37 @@
           <div class="navlinks-container">
             <div class="navlinks-holder">
               <a href="about-us.html">About</a>
-              <a href="portfolio.html">Portfolio</a>
-              <a href="#">Careers</a>
-              <a href="#">Our Team</a>
+              <a href="workflow.html">Work Flow</a>
             </div>
-            <a href="contact.html" class="contact-btn">
-              <span class="slight-glow"></span>
-              Contact Us</a
-            >
+            <div class="contactlinks-container">
+              <div class="portfolio-parent">
+                <button class="portfolio-btn" onclick="viewPortfolio()">
+                  Portfolio
+                  <img
+                    src="assets/icons/down-chevron.svg"
+                    alt="down chevron icon"
+                    height="20"
+                    width="20"
+                    decoding="async"
+                    loading="lazy"
+                  />
+                </button>
+                <div class="portfolio-links">
+                  <a href="portfolio-webdevelopment.html"
+                    >Webdevelopment Portfolio</a
+                  >
+                  <a href="portfolio-appdevelopment.html"
+                    >App development Potfolio</a
+                  >
+                  <a href="portfolio-logo.html">Logo Portfolio</a>
+                  <a href="dynamic.html">Marketing Portfolio</a>
+                </div>
+              </div>
+              <a href="contact.html" class="contact-btn">
+                <span class="slight-glow"></span>
+                Contact Us</a
+              >
+            </div>
           </div>
         </div>
       </nav>
@@ -61,7 +84,7 @@
     <main>
       <section class="package-wrapper">
         <div class="package-container">
-          <h2>Flexible & Transparent Pricing</h2>
+          <h1>Flexible & Transparent Pricing</h1>
           <p></p>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -105,9 +128,9 @@
           <div class="package-heading">
             <h3>Webdevelopment Packages</h3>
 
-            <a href="#" class="contact-bigbtn">
+            <a href="#" class="normal-btn">
               <span class="slight-glow"></span>
-              Request A Quote
+              Portfolio
               <img
                 src="assets/icons/arrow-forward.svg"
                 alt="arrow forward icon"
@@ -214,8 +237,8 @@
               >
             </div>
             <div class="package-box">
-              <h2 class="package-title">Enhance</h2>
-              <p class="package-desc">3 Design Concepts, 5 Revisions</p>
+              <h2 class="package-title">Premium</h2>
+              <p class="package-desc">3 Design Concepts, Unlimited Revisions</p>
               <div class="course-price">
                 <span>$</span>
                 <p>800</p>
@@ -285,6 +308,17 @@
                     decoding="async"
                     loading="lazy"
                     class="plans-icon"
+                  />FREE: Hosting for one year
+                </li>
+                <li>
+                  <img
+                    src="assets/icons/green-tick.webp"
+                    alt="green-tick"
+                    height="25"
+                    width="25"
+                    decoding="async"
+                    loading="lazy"
+                    class="plans-icon"
                   />FREE: Search Engine Submission
                 </li>
                 <li>
@@ -296,7 +330,7 @@
                     decoding="async"
                     loading="lazy"
                     class="plans-icon"
-                  />No Hosting
+                  />No Lifetime Hosting
                 </li>
                 <li>
                   <img
@@ -316,13 +350,14 @@
                 class="choose-plan-btn"
                 >Choose Plan</a
               >
+              <span class="popular-txt">Most Popular</span>
             </div>
             <div class="package-box">
-              <h2 class="package-title">Premium</h2>
-              <p class="package-desc">3 Design Concepts, Unlimited Revisions</p>
+              <h2 class="package-title">Custom</h2>
+              <p class="package-desc">3 Design Concepts, 5 Revisions</p>
               <div class="course-price">
                 <span>$</span>
-                <p>1200</p>
+                <p>????</p>
               </div>
               <ul class="plan-details">
                 <li>
@@ -422,7 +457,7 @@
                     decoding="async"
                     loading="lazy"
                     class="plans-icon"
-                  />No Lifetime Hosting
+                  />No Hosting
                 </li>
               </ul>
               <button class="viewMoreBtn">View More</button>
