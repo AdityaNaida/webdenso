@@ -44,7 +44,8 @@
   gap: 1.5rem;
 }
 
-.contact-options-container svg {
+.contact-options-container svg,
+.contact-options-container img {
   height: 2.5rem;
   width: 2.5rem;
   vertical-align: middle;

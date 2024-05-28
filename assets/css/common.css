@@ -331,6 +331,14 @@ footer {
   text-align: left;
 }
 
+.faq-answer > ul {
+  padding: 2rem 3rem;
+}
+
+.faq-answer > ul > li {
+  line-height: 4rem;
+}
+
 .block-faq {
   display: block !important;
   animation: fadeInText 0.5s ease 0s 1 forwards;

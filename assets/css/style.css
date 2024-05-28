@@ -26,9 +26,12 @@
 .hero-content > h2,
 .slider-wrapper > h2,
 .slider-wrapper > h3 {
+  position: relative;
   font: 600 var(--heading) var(--SF-Semibold);
   margin-bottom: 2rem;
+  overflow-y: hidden;
 }
+
 .hero-content > h2,
 .slider-wrapper > h3 {
   color: var(--white);
